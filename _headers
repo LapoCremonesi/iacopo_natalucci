@@ -1,0 +1,17 @@
+# Intestazioni HTTP per Cloudflare Pages (facoltativo).
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Librerie con la versione nel nome: non cambiano mai
+/js/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Immagini e animazioni: una settimana
+/assets/*
+  Cache-Control: public, max-age=604800
+
+# Elenco dei mix, date e forme d'onda: sempre ricontrollati
+/data/*
+  Cache-Control: no-cache

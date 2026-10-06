@@ -1,0 +1,25 @@
+[
+  {
+    "date": "2026-09-24",
+    "venue": "Locale di prova (data passata, non deve comparire)",
+    "city": "Bologna",
+    "link": "https://example.com/"
+  },
+  {
+    "date": "2026-10-17",
+    "venue": "Club di prova",
+    "city": "Milano",
+    "link": "https://example.com/"
+  },
+  {
+    "date": "2026-11-07",
+    "venue": "Festival di prova",
+    "city": "Roma"
+  },
+  {
+    "date": "2026-12-12",
+    "venue": "Warehouse di prova",
+    "city": "Torino",
+    "link": "https://example.com/"
+  }
+]

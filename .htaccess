@@ -1,0 +1,37 @@
+# Impostazioni per hosting Apache (es. Aruba). Facoltative: ogni blocco si
+# attiva solo se il modulo è disponibile, altrimenti il sito funziona lo stesso.
+
+# Tipi di file corretti (gli MP3 devono arrivare come audio/mpeg)
+<IfModule mod_mime.c>
+  AddType audio/mpeg .mp3
+  AddType application/json .json
+  AddType text/javascript .js
+  AddType image/svg+xml .svg
+  AddCharset utf-8 .html .css .js .json .svg
+</IfModule>
+
+# Compressione dei file di testo (l'audio è già compresso)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Pagina, stili, script e dati: il browser ricontrolla sempre, così le
+  # modifiche (es. un nuovo mix in tracks.json) si vedono subito
+  <FilesMatch "\.(html|css|js|json)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+
+  # Librerie con la versione nel nome: non cambiano mai
+  <FilesMatch "-[0-9]+\.[0-9]+\.[0-9]+.*\.js$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Immagini, animazioni e audio: una settimana
+  <FilesMatch "\.(jpg|jpeg|png|webp|svg|mp3)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>

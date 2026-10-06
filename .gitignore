@@ -1,0 +1,15 @@
+# Gli MP3 non vanno in git: un mix reale pesa 80–150 MB (GitHub accetta file
+# fino a 100 MB, Cloudflare Pages fino a 25 MB). Si caricano via FTP su Aruba
+# oppure su Cloudflare R2: vedi README.
+audio/*
+!audio/.gitkeep
+
+# Master audio lasciati per errore nella cartella del sito
+*.wav
+*.aif
+*.aiff
+*.flac
+
+# File di sistema
+.DS_Store
+Thumbs.db

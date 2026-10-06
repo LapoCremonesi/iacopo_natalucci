@@ -1,0 +1,42 @@
+[
+  {
+    "id": "test-mix-03",
+    "title": "Test Mix 03 — Closing",
+    "date": "2026-10-02",
+    "duration": 180.04,
+    "file": "test-mix-03.mp3",
+    "peaks": "data/peaks/test-mix-03.json",
+    "cover": "assets/img/covers/test-mix-03.jpg"
+  },
+  {
+    "id": "test-mix-02",
+    "title": "Test Mix 02 — Peak Time",
+    "date": "2026-09-17",
+    "duration": 240.04,
+    "file": "test-mix-02.mp3",
+    "peaks": "data/peaks/test-mix-02.json",
+    "cover": "assets/img/covers/test-mix-02.jpg",
+    "description": "Traccia di prova più lunga, con un po' di rumore per dare corpo alla forma d'onda.",
+    "tracklist": [
+      "Artista di prova — Primo brano",
+      "Artista di prova — Secondo brano",
+      "Artista di prova — Terzo brano (Remix)",
+      "Artista di prova — Quarto brano",
+      "Artista di prova — Quinto brano"
+    ]
+  },
+  {
+    "id": "test-mix-01",
+    "title": "Test Mix 01 — Warm Up",
+    "date": "2026-08-26",
+    "duration": 150.05,
+    "file": "test-mix-01.mp3",
+    "peaks": "data/peaks/test-mix-01.json",
+    "cover": "assets/img/covers/test-mix-01.jpg",
+    "description": "Traccia di prova generata con ffmpeg: un tono a 110 Hz con intro, break e drop, per verificare player e forma d'onda.",
+    "tracklist": [
+      "Tono di prova — 110 Hz",
+      "Tono di prova — 220 Hz"
+    ]
+  }
+]

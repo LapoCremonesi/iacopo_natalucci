@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Iacopo — DJ · Mix, date e booking</title>
+  <meta name="description" content="Iacopo, DJ. Ascolta i mix direttamente sul sito, scopri le prossime date e scrivi per il booking.">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Sostituisci [DOMINIO] con il dominio vero, es. www.tuodominio.it (vedi README) -->
+  <link rel="canonical" href="https://[DOMINIO]/">
+
+  <!-- Anteprima per la condivisione (Open Graph e Twitter/X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Iacopo">
+  <meta property="og:title" content="Iacopo — DJ">
+  <meta property="og:description" content="Mix, date e booking. Ascolta i mix direttamente sul sito.">
+  <meta property="og:url" content="https://[DOMINIO]/">
+  <meta property="og:image" content="https://[DOMINIO]/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Iacopo — DJ: mix, date e booking">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Iacopo — DJ">
+  <meta name="twitter:description" content="Mix, date e booking. Ascolta i mix direttamente sul sito.">
+  <meta name="twitter:image" content="https://[DOMINIO]/assets/img/og-image.jpg">
+  <meta name="twitter:image:alt" content="Iacopo — DJ: mix, date e booking">
+
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="modulepreload" href="js/player.js">
+  <link rel="modulepreload" href="js/vendor/wavesurfer-7.12.12.esm.js">
+  <script type="module" src="js/main.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Iacopo",
+    "jobTitle": "DJ",
+    "url": "https://[DOMINIO]/",
+    "image": "https://[DOMINIO]/assets/img/hero.jpg",
+    "sameAs": ["[INSTAGRAM_URL]"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Icone usate da pulsanti e player -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.14v13.72a1 1 0 0 0 1.52.85l11.03-6.86a1 1 0 0 0 0-1.7L9.52 4.29A1 1 0 0 0 8 5.14z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path fill="currentColor" d="M7 5h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm7 0h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path fill="currentColor" d="M5 6a1 1 0 0 1 2 0v12a1 1 0 0 1-2 0zm14 .5v11a1 1 0 0 1-1.6.8l-7.4-5.5a1 1 0 0 1 0-1.6l7.4-5.5a1 1 0 0 1 1.6.8z"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path fill="currentColor" d="M17 6a1 1 0 0 1 2 0v12a1 1 0 0 1-2 0zM5 6.5v11a1 1 0 0 0 1.6.8l7.4-5.5a1 1 0 0 0 0-1.6L6.6 5.7A1 1 0 0 0 5 6.5z"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path fill="currentColor" d="M4 9.5h3.2L11.4 6a.6.6 0 0 1 1 .46v11.08a.6.6 0 0 1-1 .46L7.2 14.5H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M15.5 9.2a4 4 0 0 1 0 5.6M18.2 6.6a7.6 7.6 0 0 1 0 10.8"/></symbol>
+    <symbol id="i-muted" viewBox="0 0 24 24"><path fill="currentColor" d="M4 9.5h3.2L11.4 6a.6.6 0 0 1 1 .46v11.08a.6.6 0 0 1-1 .46L7.2 14.5H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="m16 9.5 5 5m0-5-5 5"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#mix">Vai ai mix</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top">Iacopo</a>
+    <nav class="site-nav" aria-label="Sezioni">
+      <a href="#mix">Mix</a>
+      <a href="#date">Date</a>
+      <a href="#bio">Bio</a>
+      <a href="#booking">Booking</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <div class="hero__intro">
+          <div class="hero__mark lottie-tint" data-hero-logo aria-hidden="true"></div>
+          <p class="eyebrow">DJ</p>
+        </div>
+        <h1 class="hero__title" id="hero-title">Iacopo</h1>
+        <!-- Claim provvisorio: sostituiscilo con quello vero -->
+        <p class="hero__claim">Selezioni per la notte, da ascoltare qui.</p>
+        <div class="hero__actions">
+          <button class="btn" type="button" data-play-latest hidden>
+            <svg class="icon icon-play" aria-hidden="true"><use href="#i-play"/></svg>
+            <svg class="icon icon-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+            <span>Ascolta l'ultimo mix</span>
+          </button>
+          <ul class="social" role="list" aria-label="Social">
+            <li><a class="pill" href="[INSTAGRAM_URL]" target="_blank" rel="me noopener">Instagram <span class="arrow" aria-hidden="true">↗</span></a></li>
+            <!-- [ALTRI SOCIAL]: copia la riga qui sopra, es. SoundCloud, Resident Advisor, TikTok -->
+          </ul>
+        </div>
+      </div>
+      <figure class="hero__photo">
+        <!-- Foto provvisoria: sostituisci assets/img/hero.jpg (formato 4:5, es. 1200 × 1500) -->
+        <img src="assets/img/hero.jpg" width="1200" height="1500" alt="Ritratto di Iacopo" fetchpriority="high" decoding="async">
+      </figure>
+    </section>
+
+    <section class="section wrap" id="mix" aria-labelledby="mix-title">
+      <header class="section__head reveal">
+        <span class="section__index" aria-hidden="true">01</span>
+        <h2 class="section__title" id="mix-title">Mix</h2>
+        <p class="section__meta" data-mix-count></p>
+      </header>
+      <ol class="tracks" role="list" data-tracks></ol>
+      <p class="notice" data-tracks-notice hidden></p>
+      <noscript><p class="notice">Per ascoltare i mix attiva JavaScript nel browser.</p></noscript>
+    </section>
+
+    <section class="section wrap" id="date" aria-labelledby="date-title">
+      <header class="section__head reveal">
+        <span class="section__index" aria-hidden="true">02</span>
+        <h2 class="section__title" id="date-title">Date</h2>
+      </header>
+      <ol class="events" role="list" data-events></ol>
+      <p class="events-empty" data-events-empty hidden>Nuove date in arrivo</p>
+    </section>
+
+    <section class="section wrap" id="bio" aria-labelledby="bio-title">
+      <header class="section__head reveal">
+        <span class="section__index" aria-hidden="true">03</span>
+        <h2 class="section__title" id="bio-title">Bio</h2>
+      </header>
+      <!-- Bio provvisoria: sostituisci i testi tra parentesi quadre -->
+      <div class="bio reveal">
+        <p>Iacopo è un DJ di [CITTÀ]. [Due o tre frasi su stile e generi: cosa suona e come costruisce un set.]</p>
+        <p>[Serate, residenze, festival e collaborazioni più importanti.]</p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="booking" aria-labelledby="booking-title">
+      <header class="section__head reveal">
+        <span class="section__index" aria-hidden="true">04</span>
+        <h2 class="section__title" id="booking-title">Booking</h2>
+      </header>
+      <div class="booking reveal">
+        <p class="booking__lead">Per serate, eventi e collaborazioni scrivi a</p>
+        <a class="booking__mail" href="mailto:[EMAIL]">[EMAIL] <span class="arrow" aria-hidden="true">→</span></a>
+        <ul class="social" role="list" aria-label="Social">
+          <li><a class="pill" href="[INSTAGRAM_URL]" target="_blank" rel="me noopener">Instagram <span class="arrow" aria-hidden="true">↗</span></a></li>
+          <!-- [ALTRI SOCIAL] -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <!-- Se non c'è la partita IVA elimina lo <span> con la P.IVA -->
+    <p>© <span data-year>2026</span> Iacopo<span> · P.IVA [P.IVA]</span></p>
+    <a href="#top">Torna su <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <!-- Player: barra fissa in basso, condivisa da tutte le tracce -->
+  <section class="player" aria-label="Player" data-player inert aria-hidden="true">
+    <audio preload="none" data-audio></audio>
+    <div class="player__inner">
+      <div class="player__track">
+        <!-- La copertina vera la imposta il player; nascosta e lazy, questa non viene scaricata -->
+        <img class="player__cover" src="assets/img/favicon.svg" alt="" width="56" height="56" loading="lazy" decoding="async" data-cover hidden>
+        <div class="player__info">
+          <p class="player__title" data-title></p>
+          <p class="player__sub">
+            <span class="player__artist" data-artist></span>
+            <span class="player__status" role="status" data-status></span>
+          </p>
+        </div>
+      </div>
+      <div class="player__controls">
+        <button class="icon-btn" type="button" aria-label="Mix precedente" data-prev>
+          <svg class="icon" aria-hidden="true"><use href="#i-prev"/></svg>
+        </button>
+        <button class="play-btn play-btn--bar" type="button" aria-label="Riproduci" data-toggle>
+          <span class="play-btn__loader lottie-tint" aria-hidden="true" data-loader></span>
+          <svg class="icon icon-play" aria-hidden="true"><use href="#i-play"/></svg>
+          <svg class="icon icon-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+        </button>
+        <button class="icon-btn" type="button" aria-label="Mix successivo" data-next>
+          <svg class="icon" aria-hidden="true"><use href="#i-next"/></svg>
+        </button>
+      </div>
+      <div class="player__timeline">
+        <span class="player__time" data-current>0:00</span>
+        <div class="player__wave wave" role="slider" tabindex="0" aria-label="Posizione nel mix"
+             aria-valuemin="0" aria-valuemax="0" aria-valuenow="0" aria-valuetext="0:00" data-wave>
+          <span class="wave__hover" aria-hidden="true"><span class="wave__time"></span></span>
+        </div>
+        <span class="player__time" data-duration>0:00</span>
+      </div>
+      <div class="player__volume">
+        <button class="icon-btn" type="button" aria-label="Disattiva l'audio" data-mute>
+          <svg class="icon icon-volume" aria-hidden="true"><use href="#i-volume"/></svg>
+          <svg class="icon icon-muted" aria-hidden="true"><use href="#i-muted"/></svg>
+        </button>
+        <input class="volume" type="range" min="0" max="1" step="0.01" value="1" aria-label="Volume" data-volume>
+      </div>
+    </div>
+  </section>
+
+  <template id="track-template">
+    <li class="reveal">
+      <article class="track">
+        <div class="track__cover">
+          <img alt="" width="600" height="600" loading="lazy" decoding="async">
+        </div>
+        <div class="track__body">
+          <h3 class="track__title"><span class="track__now" aria-hidden="true"></span><span class="track__name"></span></h3>
+          <p class="track__meta"><time></time> <span aria-hidden="true">·</span> <span class="track__duration"></span></p>
+        </div>
+        <button class="play-btn track__play" type="button">
+          <svg class="icon icon-play" aria-hidden="true"><use href="#i-play"/></svg>
+          <svg class="icon icon-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+        </button>
+        <div class="track__wave wave" aria-hidden="true">
+          <span class="wave__hover"><span class="wave__time"></span></span>
+        </div>
+        <div class="track__extra">
+          <p class="track__desc"></p>
+          <details class="tracklist">
+            <summary></summary>
+            <ol></ol>
+          </details>
+        </div>
+      </article>
+    </li>
+  </template>
+
+  <template id="event-template">
+    <li class="event reveal">
+      <time class="event__date">
+        <span class="event__day" aria-hidden="true"></span>
+        <span class="event__month" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </time>
+      <div class="event__body">
+        <h3 class="event__venue"></h3>
+        <p class="event__city"></p>
+      </div>
+      <a class="pill event__link" target="_blank" rel="noopener">Info <span class="arrow" aria-hidden="true">↗</span></a>
+    </li>
+  </template>
+</body>
+</html>
